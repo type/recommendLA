@@ -87,10 +87,15 @@ header {
   width: 70%;
   min-height: 100px; }
   #find h1 {
-    font-family: 'Londrina Sketch', cursive;
+    font-family: 'Londrina Sketch', sans-serif;
     font-size: 40px;
     color: #002f2f;
     text-align: center; }
+  #find h2 {
+    font-family: 'Coda', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #ff851c; }
   #find form {
     position: relative;
     font-family: 'Coda', 'Helvetica', sans-serif;
@@ -103,6 +108,14 @@ header {
       float: left; }
     #find form .submitButton {
       margin-left: 100px; }
+  #find .findy {
+    float: left; }
+  #find #findResults {
+    display: none;
+    float: left;
+    width: 50%;
+    min-width: 150px;
+    text-align: center; }
 
 #add {
   border-radius: 10px;
@@ -117,10 +130,15 @@ header {
   min-height: 100px;
   display: none; }
   #add h1 {
-    font-family: 'Londrina Sketch', cursive;
+    font-family: 'Londrina Sketch', sans-serif;
     font-size: 40px;
     color: #002f2f;
     text-align: center; }
+  #add h2 {
+    font-family: 'Coda', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #ff851c; }
   #add form {
     position: relative;
     font-family: 'Coda', 'Helvetica', sans-serif;
@@ -133,3 +151,11 @@ header {
       float: left; }
     #add form .submitButton {
       margin-left: 100px; }
+  #add .addy {
+    float: left; }
+  #add #addResult {
+    display: none;
+    float: left;
+    width: 50%;
+    min-width: 150px;
+    text-align: center; }

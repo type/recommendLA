@@ -61,10 +61,17 @@ $pink : #DF6262;
 	min-height: 100px;
 
 	h1 {
-		font-family: 'Londrina Sketch', cursive;
+		font-family: 'Londrina Sketch', sans-serif;
 		font-size: 40px;
 		color: $blue6;
 		text-align: center;
+	}
+
+	h2 {
+		font-family: 'Coda', sans-serif;
+		font-size: 25px;
+		font-weight:normal;
+		color: $orange1;
 	}
 }
 
@@ -148,8 +155,21 @@ header {
 
 #find{
 	@include content;
+
 	form {
 		@include form-style;
+	}
+
+	.findy{
+		float: left;
+	}
+	#findResults {
+		display:none;
+		float:left;
+		width: 50%;
+
+		min-width: 150px;
+		text-align:center;
 	}
 }
 
@@ -159,5 +179,16 @@ header {
 
 	form {
 		@include form-style;
+	}
+
+	.addy{
+		float:left;
+	}
+	#addResult {
+		display:none;
+		float:left;
+		width:50%;
+		min-width: 150px;
+		text-align: center;
 	}
 }
