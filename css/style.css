@@ -1,0 +1,30 @@
+/* style.scss */
+/* variables */
+/* blues */
+/* oranges */
+/* mixins */
+body {
+  background-color: #ffa960; }
+
+#background {
+  z-index: -1;
+  background-image: url("/recommendla/images/la.png");
+  position: absolute;
+  bottom: 0;
+  width: 1020px;
+  height: 354px;
+  left: 50%;
+  margin-left: -510px; }
+
+header {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid #9d4100;
+  color: #83dbdf; }
+
+#addTitle {
+  color: #ff851c; }
+
+#appTitle {
+  color: #09787d; }

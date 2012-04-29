@@ -1,0 +1,60 @@
+/* style.scss */
+
+/* variables */
+/* blues */
+$blue1 : #15a9b0;
+$blue2 : #2A878B;
+$blue3 : #09787d;
+$blue4 : #54D9DF;
+$blue5 : #83DBDF;
+
+/* oranges */
+$orange1 : #ff851c;
+$orange2 : #ca7e3c;
+$orange3 : #b55a0c;
+$orange4 : #ffa960;
+$orange5 : #ffc695;
+
+$brown : #9D4100;
+
+/* mixins */
+@mixin rounded($side, $radius: 10px) {
+	border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+}
+
+@mixin rounded-all($radius: 10px) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+body {
+	background-color: $orange4;
+}
+#background {
+	z-index: -1;
+	background-image:url("/recommendla/images/la.png");
+	position: absolute;
+	bottom: 0;
+	$width : 1020px;
+
+	width: $width;
+	height:354px;
+	left:50%;
+	margin-left: -$width/2;
+}
+
+header {
+	@include rounded-all();
+	border: 1px solid $brown;
+	color: $blue5;
+}
+#addTitle {
+	color: $orange1;
+}
+
+#appTitle {
+	color: $blue3;
+}
