@@ -56,11 +56,14 @@ body {
 	width: 100%;
 	height:144px;
 	left: 0;
+	opacity: .7;
 }
 
 header {
-	@include rounded-all();
+	@include rounded(top-left);
+	@include rounded(top-right);
 	border: 1px solid $brown;
+	border-bottom-width: 0px;
 	color: $blue5;
 	width: 60%;
 	height: 80px;
@@ -77,10 +80,27 @@ header {
 	}
 }
 
-#addTitle {
+.appAction {
 	color: $orange1;
 }
 
-#appTitle {
-	color: $blue3;
+#mainNav {
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+	background-color: $orange1;
+	@include rounded(bottom-left);
+	@include rounded(bottom-right);
+	border: 1px solid $brown;
+	border-top-width: 0px;
+
+	a {
+		margin: 10px;
+		text-decoration: none;
+		color: white;
+		font-family: 'Coda', cursive;
+		letter-spacing: 1px;
+		font-size: 20px;
+
+	}
 }
