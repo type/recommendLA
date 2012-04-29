@@ -20,8 +20,8 @@ $brown : #9D4100;
 /* mixins */
 @mixin rounded($side, $radius: 10px) {
 	border-#{$side}-radius: $radius;
-  -moz-border-radius-#{$side}: $radius;
-  -webkit-border-#{$side}-radius: $radius;
+	-moz-border-radius-#{$side}: $radius;
+	-webkit-border-#{$side}-radius: $radius;
 }
 
 @mixin rounded-all($radius: 10px) {
@@ -31,8 +31,10 @@ $brown : #9D4100;
 }
 
 body {
-	background-color: $orange4;
+	height: 100%;
 }
+
+/* For the skyline */
 #background {
 	z-index: -1;
 	background-image:url("/recommendla/images/la.png");
@@ -46,11 +48,35 @@ body {
 	margin-left: -$width/2;
 }
 
+#mountains {
+	z-index: -2;
+	background-image:url("/recommendla/images/mountains.png");
+	position:absolute;
+	bottom: 100px;
+	width: 100%;
+	height:144px;
+	left: 0;
+}
+
 header {
 	@include rounded-all();
 	border: 1px solid $brown;
 	color: $blue5;
+	width: 60%;
+	height: 80px;
+	margin: 0 auto;
+	background-color: $blue3;
+	opacity: .9;
+
+	h1 {
+		text-align:center;
+		font-family: 'Londrina Sketch', cursive;
+		letter-spacing: 1px;
+		font-size: 46px;
+		margin: 15px;
+	}
 }
+
 #addTitle {
 	color: $orange1;
 }

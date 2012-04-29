@@ -4,8 +4,9 @@
 /* oranges */
 /* mixins */
 body {
-  background-color: #ffa960; }
+  height: 100%; }
 
+/* For the skyline */
 #background {
   z-index: -1;
   background-image: url("/recommendla/images/la.png");
@@ -16,12 +17,32 @@ body {
   left: 50%;
   margin-left: -510px; }
 
+#mountains {
+  z-index: -2;
+  background-image: url("/recommendla/images/mountains.png");
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  height: 144px;
+  left: 0; }
+
 header {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border: 1px solid #9d4100;
-  color: #83dbdf; }
+  color: #83dbdf;
+  width: 60%;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #09787d;
+  opacity: .9; }
+  header h1 {
+    text-align: center;
+    font-family: 'Londrina Sketch', cursive;
+    letter-spacing: 1px;
+    font-size: 46px;
+    margin: 15px; }
 
 #addTitle {
   color: #ff851c; }

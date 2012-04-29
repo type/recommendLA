@@ -16,3 +16,5 @@ include_once("./header.html");
 //Add the "Add" form in here
 ?>
 </div>
+</body>
+</html>
