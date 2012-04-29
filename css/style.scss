@@ -7,6 +7,7 @@ $blue2 : #2A878B;
 $blue3 : #09787d;
 $blue4 : #54D9DF;
 $blue5 : #83DBDF;
+$blue6 : #002f2f;
 
 /* oranges */
 $orange1 : #ff851c;
@@ -16,6 +17,7 @@ $orange4 : #ffa960;
 $orange5 : #ffc695;
 
 $brown : #9D4100;
+$pink : #DF6262;
 
 /* mixins */
 @mixin rounded($side, $radius: 10px) {
@@ -28,6 +30,24 @@ $brown : #9D4100;
 	border-radius: $radius;
 	-moz-border-radius: $radius;
 	-webkit-border-radius: $radius;
+}
+
+@mixin content {
+	@include rounded-all();
+	border: 2px dashed $pink;
+	background-color: white;
+	opacity:.8;
+	margin: 20px auto;
+	min-width: 300px;
+	width: 70%;
+	min-height: 100px;
+
+	h1 {
+		font-family: 'Londrina Sketch', cursive;
+		font-size: 40px;
+		color: $blue6;
+		text-align: center;
+	}
 }
 
 body {
@@ -52,7 +72,7 @@ body {
 	z-index: -2;
 	background-image:url("/recommendla/images/mountains.png");
 	position:absolute;
-	bottom: 100px;
+	bottom: 80px;
 	width: 100%;
 	height:144px;
 	left: 0;
@@ -75,8 +95,9 @@ header {
 		text-align:center;
 		font-family: 'Londrina Sketch', cursive;
 		letter-spacing: 1px;
-		font-size: 46px;
+		font-size: 50px;
 		margin: 15px;
+		overflow: hidden;
 	}
 }
 
@@ -95,12 +116,19 @@ header {
 	border-top-width: 0px;
 
 	a {
-		margin: 10px;
+		margin: 25px;
 		text-decoration: none;
 		color: white;
 		font-family: 'Coda', cursive;
-		letter-spacing: 1px;
 		font-size: 20px;
-
 	}
+}
+
+#find{
+	@include content;
+}
+
+#add {
+	@include content;
+	display: none;
 }
