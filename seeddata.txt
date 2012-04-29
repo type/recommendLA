@@ -1,0 +1,141 @@
+{
+  "userID": "Toby",
+  "thingID": "Omino Sushi",
+  "attr": {
+    "food": 4,
+    "price": 4
+	"atmosphere" : 3
+  }
+}
+
+{
+  "userID": "Toby",
+  "thingID": "Subway",
+  "attr": {
+    "food": 2,
+    "price": 5,
+	"atmosphere": 2
+  }
+}
+
+{
+  "userID": "Shea",
+  "thingID": "Omino Sushi",
+  "attr": {
+    "food": 5,
+    "price": 4,
+	"atmosphere": 3
+  }
+}
+
+{
+  "userID": "Shea",
+  "thingID": "Small Island",
+  "attr": {
+    "food": 5,
+    "price": 3,
+	"atmosphere": 2
+  }
+}
+
+{
+  "userID": "Shea",
+  "thingID": "Nanbankan",
+  "attr": {
+    "food": 5,
+    "price": 3,
+	"atmosphere": 4
+  }
+}
+
+{
+  "userID": "Alex",
+  "thingID": "Omino Sushi",
+  "attr": {
+    "food": 3,
+    "price": 3,
+	"atmosphere": 3
+  }
+}
+
+{
+  "userID": "Alex",
+  "thingID": "GyuKaku",
+  "attr": {
+    "food": 5,
+    "price": 3,
+	"atmosphere": 3
+  }
+}
+
+{
+  "userID": "Alex",
+  "thingID": "Nanbankan",
+  "attr": {
+    "food": 3,
+    "price": 4,
+	"atmosphere": 5
+  }
+}
+
+{
+  "userID": "Liz Lemon",
+  "thingID": "Subway",
+  "attr": {
+    "food": 5,
+    "price": 5,
+	"atmosphere": 3,
+	"eat-fresh-ness": 4
+  }
+}
+
+{
+  "userID": "Liz Lemon",
+  "thingID": "KFC",
+  "attr": {
+    "food": 5,
+    "price": 5,
+	"atmosphere": 3,
+	"eat-fresh-ness": 2
+  }
+}
+
+{
+  "userID": "Ripley",
+  "thingID": "Space Food",
+  "attr": {
+    "food": 2,
+    "price": 2,
+	"atmosphere": 1
+  }
+}
+
+{
+  "userID": "Alien",
+  "thingID": "Jones",
+  "attr": {
+    "food": 1,
+    "price": 2,
+	"atmosphere": 1,
+  }
+}
+
+{
+  "userID": "Joe",
+  "thingID": "Small Island",
+  "attr": {
+    "food": 4,
+    "price": 3,
+	"atmosphere": 2,
+  }
+}
+
+{
+  "userID": "Joe",
+  "thingID": "Shik Do Rak",
+  "attr": {
+    "food": 4,
+    "price": 4,
+	"atmosphere": 3,
+  }
+}

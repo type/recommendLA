@@ -32,6 +32,24 @@ $pink : #DF6262;
 	-webkit-border-radius: $radius;
 }
 
+@mixin form-style {
+	position:relative;
+	font-family: 'Coda', 'Helvetica', sans-serif;
+	color: $blue6;
+	padding: 8px 5px 0 10px;
+
+	label {
+		padding-left: 20px;
+		min-width: 150px;
+		width: 20%;
+		float: left;
+	}
+
+	.submitButton {
+		margin-left: 100px;
+	}
+}
+
 @mixin content {
 	@include rounded-all();
 	border: 2px dashed $pink;
@@ -93,11 +111,15 @@ header {
 
 	h1 {
 		text-align:center;
-		font-family: 'Londrina Sketch', cursive;
-		letter-spacing: 1px;
+		font-family: 'Londrina Sketch', 'Helvetica', sans-serif;
+		letter-spacing: 2px;
 		font-size: 50px;
 		margin: 15px;
 		overflow: hidden;
+
+		#LA {
+			color:$orange1;
+		}
 	}
 }
 
@@ -109,7 +131,7 @@ header {
 	margin: 0 auto;
 	width: 60%;
 	text-align: center;
-	background-color: $orange1;
+	background-color: $pink;
 	@include rounded(bottom-left);
 	@include rounded(bottom-right);
 	border: 1px solid $brown;
@@ -119,16 +141,23 @@ header {
 		margin: 25px;
 		text-decoration: none;
 		color: white;
-		font-family: 'Coda', cursive;
+		font-family: 'Coda', 'Helvetica', sans-serif;
 		font-size: 20px;
 	}
 }
 
 #find{
 	@include content;
+	form {
+		@include form-style;
+	}
 }
 
 #add {
 	@include content;
 	display: none;
+
+	form {
+		@include form-style;
+	}
 }
