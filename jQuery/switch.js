@@ -13,6 +13,9 @@ $(function(){
 		$("#find").hide();
 		$("#add").show();
 	});
+	$("#add").click(function(){
+		$("#addResult").hide();
+	});
 });
 
 
@@ -52,13 +55,14 @@ var findPlace = function(){
 		console.log(data);
 		$('#findResults').show();
 		var obj = data;
+			$('#findResults').html("");
 		for(var i=0;i<obj.length;i++){
 			var attrhtml="";
 			for(attr in obj[i]){
 				if(attr==="placeName") continue;
 				attrhtml+= attr+": "+obj[i][attr]+"<br>";
 			}
-			$('#findResults').html("<div style='text-align:left;margin:20px'><h3>"+obj[i].placeName+"</h3>"+attrhtml+"</div>");
+			$('#findResults').append("<div style='text-align:left;margin:20px'><h3>"+obj[i].placeName+"</h3>"+attrhtml+"</div>");
 		}
 	});
 
